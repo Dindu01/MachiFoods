@@ -12,6 +12,16 @@ html{
     text-rendering: optimizeLegibility;
 }
 
+.clearfix{zoom: 1}
+.clearfix:after{
+    content: '_';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
 /*-- REUSEABLE COMPONENTS*/
 .row{
     max-width: 1140px;
@@ -101,6 +111,7 @@ a:hover{
 }
 
 
+/** first section**/
 section{
     padding: 80px o;
 }
@@ -131,7 +142,9 @@ h2:after{
     width: 705;
     margin-left: 15%;
 }
-
+.feature .little-paragraph{
+    margin-bottom: 50px;
+}
 .box{
     padding: 1%;
 }
@@ -154,3 +167,87 @@ h3{
     color: #e67e22;
     margin-bottom: 10px;
 }
+
+/** Meals Section **/
+.meal-showcase{
+    list-style: none;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.meal-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+.meal-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    
+}
+
+/** for the hover effect **/
+.meal-photo img:hover{
+    transform: scale(1.05);
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+
+
+/** HOW IT WORKS -SECTION **/
+
+
+.section-steps{
+    background-color: rgb(234, 231, 231);
+}
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+.app-screen{
+    width: 40%;
+}
+
+.work-setup{
+    margin: 50px;
+}
+.work-setup div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+
+ 
+
+
+
